@@ -1,0 +1,338 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color:#ffffff;
+    --text-color:#111111;
+    --main-color:rgb(167, 5, 5);
+    --big-font:4.5rem;
+    --h2-font:3.3rem;
+    --h3-font:2rem;
+    --normal-font:1rem;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+header{
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 20px 14%;
+    transition: all .35s ease;
+}
+.logo{
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--text-color);
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: var(--text-color);
+    font-weight: 600;
+    padding: 10px 25px;
+    font-size: var(--normal-font);
+    transition: all .36s ease;
+}
+.navlist a:hover{
+    color: var(--main-color);
+}
+.headericons i{
+    font-size: 32px;
+    color: var(--text-color);
+    margin-right: 20px;
+    transition: all .36s ease;
+}
+.headericons i:hover{
+    color: var(--main-color);
+}
+#menuicon{
+    font-size: 34px;
+    color: var(--text-color);
+    z-index: 10001;
+    margin-right: 20px;
+    display: none;
+}
+section{
+    padding: 100px 14%;
+}
+.home{
+    min-height: 100vh;
+    width: 100%;
+    background:url(./IMG-20220904-WA0029.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+}
+.hometext h1{
+    font-size: var(--big-font);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: .6rem;
+    margin-bottom: 1.4rem;
+}
+.hometext span{
+    color:rgb(167, 5, 5);
+}
+.hometext p{
+    font-size: var(--normal-font);
+    font-weight: 700;
+    margin-bottom: 3rem;
+    letter-spacing: .2rem;
+    color: white;
+}
+.btn{
+    display: inline-block;
+    padding: 13px 25px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all .35s ease;
+}
+.btn:hover{
+transform: translateY(-5px);
+background: var(--text-color);
+}
+header{
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background:rgb(167, 5, 5);
+}
+header.sticky{
+    padding: 14px 14%;
+    background: var(--bg-color);
+    box-shadow: 0px 0px 10px rgb(0 0 0 /10%);
+}
+.centertext{
+    text-align: center;
+}
+.centertext h2{
+    font-size: var(--h3-font);
+    font-weight: bold;
+}
+.featuredcontent{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,auto));
+    gap: 1.3rem;
+    align-items: center;
+    margin-top: 4rem;
+}
+.row{
+    position: relative;
+    transition: all .35s ease;
+    background: white;
+}
+.row img{
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,auto));
+    gap: 1.3rem;
+    align-items: center;
+    margin-top: 4rem;
+    border-radius: 3%;
+    padding: 0px 0px 10px 10px;
+    margin-left: 15px;
+    margin-top: 10px;
+
+}
+.featext{
+    position: absolute;
+    left: 30px;
+    top: 80px;
+}
+.featext h5{
+    font-size: 19px;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.featext p{
+    color:white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.row:hover{
+    transform: scale(0.9) translateY(-5px);
+    cursor: pointer;
+}
+.cta{
+    height: 6ovh;
+    width: 100%;
+    background: url(./rolex-air-king-lead-1649165173.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+.ctatext h6{
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: .6px;
+    margin-bottom: 14px;
+}
+.ctatext h4{
+    font-size: 3.3rem;
+    line-height: 1.2;
+    letter-spacing: .6rem;
+    margin-bottom: 30px;
+}
+.newcontent{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,auto));
+    gap: 1.3rem;
+    align-items: center;
+    margin-top: 4rem;
+    text-align: center;
+}
+.box{
+    position: relative;
+    transition: all .40s ease;
+}
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.box h5{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.box h6{
+    font-size:16px ;
+    font-weight: 700;
+}
+.sale{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 30px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.box:hover{
+    transform: scale(0.9) translateY(-5px);
+    cursor: pointer;
+}
+.contact{
+    background:black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+}
+.maincontent{
+    font-size: 20px;
+    margin-bottom: 1.6rem;
+    color: var(--bg-color);
+}
+.icons{
+    display: flex;
+    margin-top: 2rem;
+}
+.maincontent li{
+margin-bottom: 15px;
+}
+.maincontact li a{
+    display: block;
+    color:var(--main-color);
+    font-size: var(--normal-font);
+    font-weight: 600;
+    transition: all .6s ease;
+}
+.maincontent li a:hover{
+    transform: translateX(-8px);
+    color: var(--bg-color);
+}
+.lasttext{
+    text-align: center;
+    padding: 20px;
+    background: var(--text-color);
+}
+.lasttext p{
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+.top i{
+    font-size: 22px;
+    color: var(--bg-color);
+    padding: 14px;
+    background: var(--main-color);
+    display: flex;
+}
+@media (max-width:1000px){
+    header{
+        padding: 7px 4%;
+        transition: .2s
+    }
+}
+header.sticky{
+    padding: 14px 4%;
+    transition: .2s;
+}
+section{
+    padding: 80px 4%;
+transition: .1s;
+}
+@media (max-width:670px){
+#menuicon{
+    display: block;
+}
+.headericons{
+    display: inline-flex;
+}
+.navlist{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 280px;
+    height: 120vh;
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 150px 30px;
+    transition: all .45s ease;
+}
+.navlist a{
+    display: block;
+    margin: 1.2rem 0;
+}
+.navlist.open{
+    left: 0;
+}
+}
